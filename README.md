@@ -1,5 +1,10 @@
 # 🎓 EduChainX — Decentralized Academic Transcript Verifier
 <img src="https://raw.githubusercontent.com/birukG09/EduChainX/51522bd7e97f6c997b80db710b2a2ea82bb75b2e/Screenshot_8-8-2025_0120_46c00bcc-02cf-44b1-a5f5-bead04a4cc42-00-2tdln7kxfjwap.picard.replit.dev.jpeg" width="600"/>
+<img src="https://raw.githubusercontent.com/birukG09/EduChainX/522b5cbb607fdd30bde3b9c0c92f4bcf39faf370/Screenshot_8-8-2025_000_46c00bcc-02cf-44b1-a5f5-bead04a4cc42-00-2tdln7kxfjwap.picard.replit.dev.jpeg" width="600"/>
+
+<img src="https://raw.githubusercontent.com/birukG09/EduChainX/522b5cbb607fdd30bde3b9c0c92f4bcf39faf370/Screenshot_7-8-2025_23594_46c00bcc-02cf-44b1-a5f5-bead04a4cc42-00-2tdln7kxfjwap.picard.replit.dev.jpeg" width="600"/>
+
+<img src="https://raw.githubusercontent.com/birukG09/EduChainX/522b5cbb607fdd30bde3b9c0c92f4bcf39faf370/Screenshot_7-8-2025_235938_46c00bcc-02cf-44b1-a5f5-bead04a4cc42-00-32tdln7kxfjwap.picard.replit.dev.jpeg" width="600"/>
 
 EduChainX is a full-stack, production-grade decentralized platform for issuing, managing, and verifying academic credentials across institutions, powered by **Solidity smart contracts**, **Rust backends**, and **Java-based tools** for institutional workflows.
 
