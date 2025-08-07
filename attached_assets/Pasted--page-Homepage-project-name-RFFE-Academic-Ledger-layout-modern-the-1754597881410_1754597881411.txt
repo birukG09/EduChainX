@@ -1,0 +1,104 @@
+{
+  "page": "Homepage",
+  "project_name": "RFFE | Academic Ledger",
+  "layout": "modern",
+  "theme": "clean, tech-driven, secure, trustworthy",
+  "sections": [
+    {
+      "id": "hero",
+      "type": "full-width",
+      "layout": "2-column",
+      "left": {
+        "element": "headline",
+        "text": "Revolutionizing Finance & Education with Blockchain Intelligence",
+        "style": "xl, bold, gradient"
+      },
+      "right": {
+        "element": "illustration",
+        "src": "secure-data-blockchain-analytics.svg"
+      },
+      "subtext": "Real-Time Financial Anomaly Detection & Academic Credential Verification — Decentralized, Verifiable, Smart",
+      "cta_buttons": [
+        {
+          "text": "Get Started",
+          "style": "primary",
+          "link": "/onboard"
+        },
+        {
+          "text": "Explore Dashboard",
+          "style": "outline",
+          "link": "/admin"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "grid-3",
+      "title": "Core Engines",
+      "features": [
+        {
+          "icon": "📊",
+          "title": "RFFE Engine",
+          "desc": "Detect and analyze financial anomalies in real-time using Rust & AI models."
+        },
+        {
+          "icon": "📄",
+          "title": "Academic Verifier",
+          "desc": "Verify academic records instantly using Solidity smart contracts and on-chain signatures."
+        },
+        {
+          "icon": "🧠",
+          "title": "AI Insight Hub",
+          "desc": "Visualize trends, categorize expenses, and expose patterns across transaction networks."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "type": "step-layout",
+      "title": "How It Works",
+      "steps": [
+        "1. Upload Transaction/Transcript Data (via Admin/Student Portal)",
+        "2. Anomaly Detection or Record Hashing Triggered",
+        "3. AI & Blockchain Engine Analyze or Verify",
+        "4. Results Visualized in Admin/Client Dashboards"
+      ]
+    },
+    {
+      "id": "dashboard-preview",
+      "type": "image-highlight",
+      "title": "Explore the Smart Dashboards",
+      "desc": "Admin, Financial Institutions, and Universities get real-time access to insights, alerts, and verified ledgers.",
+      "images": ["admin-dashboard-preview.png", "student-profile-verification.png"]
+    },
+    {
+      "id": "testimonials",
+      "type": "carousel",
+      "title": "Early Adopters",
+      "quotes": [
+        {
+          "text": "The real-time fraud detection alone saved us thousands.",
+          "author": "Ethiobank Security Lead"
+        },
+        {
+          "text": "Finally a way to verify credentials that can’t be forged.",
+          "author": "Dean of Engineering, AddisTech"
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "links": ["Privacy", "Terms", "Contact", "GitHub", "Docs"],
+      "credits": "Built with Solidity, Rust, Java & AI | © 2025 RFFE Academic Ledger"
+    }
+  ],
+  "style_guide": {
+    "fonts": ["Inter", "JetBrains Mono"],
+    "primary_color": "#4F46E5",
+    "secondary_color": "#06B6D4",
+    "background": "white",
+    "cta_style": "rounded, shadow-md, gradient-hover",
+    "animations": "fade-in, slide-up, typewriter-text on headline"
+  }
+}

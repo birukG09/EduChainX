@@ -1,0 +1,129 @@
+{
+  "project_name": "EduChainX: Decentralized Academic Verification and Financial Forensics System",
+  "description": "A full-stack secure academic transcript verification platform using Solidity smart contracts for immutable data, Rust for high-performance financial forensics engine, and Java for admin services and integrations. Includes real-time anomaly detection for financial flows related to student tuition, grants, and institutional transactions.",
+  "tech_stack": {
+    "smart_contracts": "Solidity (Ethereum compatible)",
+    "backend": [
+      "Rust (Actix Web, Axum, or Rocket)",
+      "Java (Spring Boot) for admin/enterprise features"
+    ],
+    "frontend": "Next.js + TypeScript + Tailwind",
+    "database": [
+      "PostgreSQL (for off-chain data)",
+      "IPFS/Arweave (for certificate storage)",
+      "Redis (for queueing/logging)"
+    ],
+    "data_pipeline": "Kafka or NATS for streaming financial logs",
+    "ML/Detection": "Rust + WebAssembly anomaly detection engine"
+  },
+  "features": {
+    "smart_contracts": [
+      "Student registration and transcript issuance",
+      "University/issuer identity management",
+      "On-chain signature and hash verification",
+      "Transcript request and validation with zero-knowledge proof of ownership"
+    ],
+    "rffe_engine": [
+      "Transaction ingestion from financial APIs or internal systems",
+      "Categorization of expenses (tuition, grants, fees, services)",
+      "Anomaly detection via statistical + ML models",
+      "Visual alerting, fraud risk scores, and pattern detection"
+    ],
+    "admin_dashboard": {
+      "roles": ["SuperAdmin", "University Admin", "Financial Auditor", "Student"],
+      "pages": [
+        "Login/Register",
+        "Dashboard Overview",
+        "Student Management",
+        "University Verification",
+        "Transcript Issuance/Validation",
+        "Real-Time Financial Logs",
+        "Anomaly Heatmaps",
+        "Alerts and Risk Reports",
+        "Smart Contract Deployment Interface",
+        "System Logs & Audit Trail",
+        "Settings and API Keys"
+      ],
+      "visuals": [
+        "Real-time charts (Bar, Line, Sankey)",
+        "Financial map (geo-spatial activity)",
+        "Timeline of fraud events",
+        "Transcript verification scan (QR/TxHash)"
+      ]
+    }
+  },
+  "app_structure": {
+    "frontend": {
+      "framework": "Next.js",
+      "pages": [
+        "/login",
+        "/dashboard",
+        "/verify-transcript",
+        "/issue-transcript",
+        "/transactions",
+        "/anomalies",
+        "/universities",
+        "/students",
+        "/settings"
+      ],
+      "components": [
+        "AuthGuard",
+        "SidebarLayout",
+        "AnomalyChart",
+        "TranscriptCard",
+        "SmartContractInteraction",
+        "TxViewer",
+        "RiskScoreBar"
+      ]
+    },
+    "backend": {
+      "rust": {
+        "modules": [
+          "Transaction Ingestion",
+          "Real-Time Analytics",
+          "Anomaly Detector",
+          "Report Generator",
+          "WASM modules for browser-based checks"
+        ]
+      },
+      "java": {
+        "microservices": [
+          "Admin Portal Auth",
+          "University KYC Validation",
+          "User Role Management",
+          "PDF Transcript Generator",
+          "Email Notification Engine"
+        ]
+      }
+    },
+    "solidity": {
+      "contracts": [
+        "TranscriptRegistry.sol",
+        "UniversityVerifier.sol",
+        "StudentIdentity.sol",
+        "AccessControl.sol"
+      ],
+      "methods": [
+        "registerStudent(address _student, string memory _hash)",
+        "issueTranscript(address _student, bytes32 _transcriptHash)",
+        "validateTranscript(bytes32 _hash)",
+        "revokeTranscript(address _student)"
+      ]
+    }
+  },
+  "db_schema": {
+    "users": ["id", "email", "password_hash", "role", "university_id"],
+    "transcripts": ["id", "student_id", "ipfs_hash", "verified", "block_txn"],
+    "transactions": ["id", "type", "amount", "timestamp", "status", "risk_score"],
+    "anomalies": ["id", "transaction_id", "risk_score", "description", "timestamp"],
+    "universities": ["id", "name", "verified", "wallet_address"],
+    "logs": ["id", "event_type", "user_id", "timestamp", "meta"]
+  },
+  "auth": {
+    "methods": ["JWT", "OAuth2", "Role-Based Access Control (RBAC)", "On-chain wallet login (MetaMask)"]
+  },
+  "deployment": {
+    "blockchain": "Polygon or Base testnet for scalability",
+    "backend": "Dockerized microservices on Kubernetes or Nomad",
+    "CI/CD": "GitHub Actions + DockerHub + Fly.io/Vercel/Render",
+    "storage": "IPFS via Pinata or web3.stora

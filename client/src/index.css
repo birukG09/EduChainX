@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* CryptX Green & Dark Theme - Light Mode */
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(120 15% 5%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(120 15% 5%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(120 15% 5%);
+  --primary: hsl(142 76% 36%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(120 4% 95%);
+  --secondary-foreground: hsl(120 15% 5%);
+  --muted: hsl(120 4% 95%);
+  --muted-foreground: hsl(120 4% 46%);
+  --accent: hsl(142 76% 36%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(120 6% 90%);
+  --input: hsl(120 6% 90%);
+  --ring: hsl(142 76% 36%);
+  --radius: 0.75rem;
+  
+  /* Chart colors - Green theme */
+  --chart-1: hsl(142 76% 36%);
+  --chart-2: hsl(120 100% 25%);
+  --chart-3: hsl(180 100% 25%);
+  --chart-4: hsl(60 100% 50%);
+  --chart-5: hsl(35 100% 50%);
+  
+  /* Sidebar colors */
+  --sidebar: hsl(0 0% 100%);
+  --sidebar-foreground: hsl(120 15% 5%);
+  --sidebar-primary: hsl(142 76% 36%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(120 4% 95%);
+  --sidebar-accent-foreground: hsl(142 76% 36%);
+  --sidebar-border: hsl(120 6% 90%);
+  --sidebar-ring: hsl(142 76% 36%);
+  
+  /* Custom CryptX colors */
+  --neon-green: 120 100% 50%;
+  --forest-dark: 120 30% 8%;
+  --emerald: 140 60% 45%;
+  --crypto-gold: 43 96% 56%;
+  --danger-red: 0 84% 60%;
+  
+  /* Fonts */
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+.dark {
+  /* CryptX Green & Dark Theme - Dark Mode */
+  --background: hsl(120 15% 7%);
+  --foreground: hsl(120 5% 95%);
+  --card: hsl(120 20% 10%);
+  --card-foreground: hsl(120 5% 95%);
+  --popover: hsl(120 20% 10%);
+  --popover-foreground: hsl(120 5% 95%);
+  --primary: hsl(120 100% 50%);
+  --primary-foreground: hsl(120 15% 7%);
+  --secondary: hsl(120 15% 15%);
+  --secondary-foreground: hsl(120 5% 95%);
+  --muted: hsl(120 15% 15%);
+  --muted-foreground: hsl(120 5% 65%);
+  --accent: hsl(120 100% 50%);
+  --accent-foreground: hsl(120 15% 7%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(120 15% 15%);
+  --input: hsl(120 15% 15%);
+  --ring: hsl(120 100% 50%);
+  
+  /* Chart colors - Dark green theme */
+  --chart-1: hsl(120 100% 50%);
+  --chart-2: hsl(142 76% 36%);
+  --chart-3: hsl(180 100% 40%);
+  --chart-4: hsl(60 100% 50%);
+  --chart-5: hsl(0 84% 60%);
+  
+  /* Sidebar colors - Dark mode */
+  --sidebar: hsl(120 20% 10%);
+  --sidebar-foreground: hsl(120 5% 95%);
+  --sidebar-primary: hsl(120 100% 50%);
+  --sidebar-primary-foreground: hsl(120 15% 7%);
+  --sidebar-accent: hsl(120 15% 15%);
+  --sidebar-accent-foreground: hsl(120 100% 50%);
+  --sidebar-border: hsl(120 15% 15%);
+  --sidebar-ring: hsl(120 100% 50%);
+  
+  /* Custom CryptX colors - Dark mode */
+  --neon-green: 120 100% 50%;
+  --forest-dark: 120 30% 8%;
+  --emerald: 140 60% 45%;
+  --crypto-gold: 43 96% 56%;
+  --danger-red: 0 84% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* CryptX Custom Styles */
+.crypto-glow {
+  box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+}
+
+.neon-glow {
+  box-shadow: 0 0 10px hsl(var(--neon-green) / 0.5);
+}
+
+.profit-green {
+  color: hsl(120 100% 50%);
+}
+
+.loss-red {
+  color: hsl(0 84% 60%);
+}
+
+.crypto-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--emerald)) 100%);
+}
+
+.crypto-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .crypto-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Web3 Animations */
+@keyframes pulse-green {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-green {
+  animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px hsl(var(--primary) / 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.8);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* CryptX UI Components */
+.crypto-button {
+  @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-200;
+  @apply hover:shadow-lg;
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(142 76% 32%) 100%);
+}
+
+.crypto-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px hsl(var(--primary) / 0.3);
+}
+
+.crypto-input {
+  @apply bg-input border border-border rounded-lg px-4 py-2;
+  @apply focus:border-primary focus:ring-2 focus:ring-primary;
+  transition: all 0.2s ease-in-out;
+}
+
+.crypto-stat-card {
+  @apply bg-card border border-border rounded-xl p-6;
+  @apply hover:border-primary transition-all duration-200;
+  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--card)) 100%);
+}
+
+.dark .crypto-stat-card {
+  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(120 25% 12%) 100%);
+  border: 1px solid hsl(var(--border));
+}
+
+.crypto-nav-item {
+  @apply flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200;
+  @apply hover:bg-accent hover:text-accent-foreground;
+}
+
+.crypto-nav-item.active {
+  @apply bg-primary text-primary-foreground shadow-lg;
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(142 76% 32%) 100%);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
+}
