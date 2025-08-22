@@ -10,7 +10,7 @@ EduChainX is a full-stack, production-grade decentralized platform for issuing, 
 
 > ⚡ Built for governments, universities, and employers to **securely validate academic records** on-chain and off-chain with privacy, authenticity, and auditability.
 
---
+
 
 ## 📚 Table of Contents
 
